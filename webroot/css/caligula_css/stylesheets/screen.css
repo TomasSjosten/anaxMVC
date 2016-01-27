@@ -1,0 +1,355 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:800,400,400italic);
+/* line 5, ../../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* ------------------------------- FONTS
+--------------------------------------------------------------------------------------------------- */
+/* font-family: 'Roboto Slab', serif; */
+/* ------------------------------- GENERAL
+--------------------------------------------------------------------------------------------------- */
+/* line 22, ../sass/screen.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 27, ../sass/screen.scss */
+html, body, #content {
+  position: relative;
+}
+
+/* line 31, ../sass/screen.scss */
+body {
+  background-color: #fcfcfc;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+/* line 35, ../sass/screen.scss */
+body strong {
+  font-weight: 800;
+}
+/* line 39, ../sass/screen.scss */
+body .hidden {
+  display: none;
+}
+
+/* line 45, ../sass/screen.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+}
+
+/* line 49, ../sass/screen.scss */
+h1 {
+  font-size: 250%;
+  color: #839f93;
+  letter-spacing: 1px;
+  border-bottom: solid 1px #bbcbc4;
+}
+
+/*------------------------------ HEADER
+----------------------------------------------------------------------------------------------------*/
+/* line 59, ../sass/screen.scss */
+header {
+  min-height: 165px;
+  height: 40vh;
+  max-height: 200px;
+  position: relative;
+  padding: 40px 0 20px 0;
+  background: #839f93;
+}
+/* line 67, ../sass/screen.scss */
+header .header {
+  max-width: 960px;
+  margin: 0 auto 0 auto;
+}
+/* line 72, ../sass/screen.scss */
+header .header-left {
+  width: 49%;
+  display: inline-block;
+}
+/* line 77, ../sass/screen.scss */
+header img {
+  vertical-align: top;
+  margin: 0 21px 0 0;
+}
+/* line 81, ../sass/screen.scss */
+header .header-text {
+  vertical-align: inherit;
+}
+/* line 84, ../sass/screen.scss */
+header img, header .header-text {
+  display: inline-block;
+}
+/* line 87, ../sass/screen.scss */
+header .sitetitle {
+  font-size: 500%;
+  display: block;
+}
+/* line 91, ../sass/screen.scss */
+header .siteslogan {
+  font-size: 120%;
+  display: block;
+}
+
+/*------------------------------ MAIN
+----------------------------------------------------------------------------------------------------*/
+/* line 102, ../sass/screen.scss */
+main {
+  position: relative;
+  min-height: 100vh;
+  background: #edecf5;
+}
+/* line 107, ../sass/screen.scss */
+main .center {
+  max-width: 960px;
+  margin: 0 auto 0 auto;
+  padding: 150px 20px 50px 20px;
+}
+
+/* line 114, ../sass/screen.scss */
+.byline {
+  margin: 140px 0 80px 0;
+  border-top: solid 1px #c8c8c8;
+  padding: 10px 0 0 0;
+}
+/* line 119, ../sass/screen.scss */
+.byline img {
+  width: 81px;
+}
+/* line 123, ../sass/screen.scss */
+.byline figure {
+  width: 9%;
+}
+/* line 126, ../sass/screen.scss */
+.byline p {
+  width: 90%;
+  color: #8c8c8c;
+}
+/* line 131, ../sass/screen.scss */
+.byline figure, .byline p {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*------------------------------ LINKS
+----------------------------------------------------------------------------------------------------*/
+/*------------------------------ FOOTER
+----------------------------------------------------------------------------------------------------*/
+/* line 153, ../sass/screen.scss */
+footer {
+  width: 100%;
+  padding: 0 0 32px 0;
+  display: block;
+  background: #415e51;
+  box-shadow: 0 0 4px 2px #1f322a;
+  min-height: 180px;
+  max-height: 200px;
+}
+/* line 166, ../sass/screen.scss */
+footer .sitefooter {
+  max-width: 960px;
+  margin: 0 auto 0 auto;
+  display: block;
+  padding: 20px 0 20px 0;
+}
+
+/*------------------------------ INPUT FIELDS
+----------------------------------------------------------------------------------------------------*/
+/* line 181, ../sass/screen.scss */
+input[type="submit"], input[type="reset"], button {
+  cursor: pointer;
+  outline: 0;
+  height: 30px;
+  font-size: 110%;
+  padding: 0 10px 0 10px;
+  border-radius: 3px;
+  margin: 0 0 0 auto;
+  display: block;
+}
+
+/* line 193, ../sass/screen.scss */
+.green_button {
+  background: #75cb70;
+  border: solid 1px #397636;
+  color: #256222;
+  text-shadow: 1px 1px 0 #a6e7a3;
+}
+
+/* line 199, ../sass/screen.scss */
+.green_button:hover {
+  cursor: pointer;
+  background: #58b253;
+  border: solid 1px #32682f;
+}
+
+/* line 204, ../sass/screen.scss */
+.blue_button {
+  background: #9ca1ee;
+  border-radius: 5px;
+  border: solid 1px #2d2f7a;
+  color: #252262;
+  text-shadow: 1px 1px 0 #a3a8e7;
+}
+
+/* line 211, ../sass/screen.scss */
+.blue_button:hover {
+  cursor: pointer;
+  background: #6a72ec;
+  border: solid 1px #1f2170;
+}
+
+/* line 216, ../sass/screen.scss */
+.red_button {
+  background: #ee7777;
+  border: solid 1px #ec2323;
+  color: #911e1e;
+  text-shadow: 1px 1px 0 #f0a4a4;
+}
+
+/* line 222, ../sass/screen.scss */
+.red_button:hover {
+  cursor: pointer;
+  background: #e55858;
+  border: solid 1px #e51111;
+}
+
+/*------------------------------ FANCYBOX
+----------------------------------------------------------------------------------------------------*/
+/* line 232, ../sass/screen.scss */
+#box {
+  z-index: 100;
+  background: #fcfcfc;
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%);
+  min-width: 200px;
+  min-height: 100px;
+  max-width: 90%;
+  max-height: 90%;
+  padding: 20px;
+  border-radius: 5px;
+  border: solid 1px;
+  -webkit-box-shadow: 2px 2px 22px 10px #969696 ;
+  -moz-box-shadow: 2px 2px 22px 10px #969696 ;
+  -ms-box-shadow: 2px 2px 22px 10px #969696 ;
+  -o-box-shadow: 2px 2px 22px 10px #969696 ;
+  box-shadow: 2px 2px 22px 10px #969696 ;
+}
+/* line 248, ../sass/screen.scss */
+#box #box_overflow {
+  overflow: scroll;
+  max-height: 75vh;
+  min-height: 100px;
+  padding: 5px 5px 5px 5px;
+}
+/* line 255, ../sass/screen.scss */
+#box #close_icon {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: #fcfcfc;
+}
+/* line 263, ../sass/screen.scss */
+#box #close_icon:hover {
+  background-color: #ff9f9f;
+}
+
+/*------------------------------ MESSAGE BUBBLE
+----------------------------------------------------------------------------------------------------*/
+/* line 272, ../sass/screen.scss */
+.msg {
+  position: fixed;
+  top: 60px;
+  right: 40px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+}
+
+/* line 280, ../sass/screen.scss */
+.okmsg {
+  background: #b3f2af;
+  -webkit-box-shadow: 0 0 15px 1px #387a3d ;
+  -moz-box-shadow: 0 0 15px 1px #387a3d ;
+  -ms-box-shadow: 0 0 15px 1px #387a3d ;
+  -o-box-shadow: 0 0 15px 1px #387a3d ;
+  box-shadow: 0 0 15px 1px #387a3d ;
+  border: solid 1px #289015;
+  color: #0e6d01;
+}
+
+/* line 287, ../sass/screen.scss */
+.errormsg {
+  background: #f6a3a3;
+  border: solid 1px #901515;
+  color: #990606;
+  -webkit-box-shadow: 0 0 15px 1px #784646 ;
+  -moz-box-shadow: 0 0 15px 1px #784646 ;
+  -ms-box-shadow: 0 0 15px 1px #784646 ;
+  -o-box-shadow: 0 0 15px 1px #784646 ;
+  box-shadow: 0 0 15px 1px #784646 ;
+}

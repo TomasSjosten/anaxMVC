@@ -1,0 +1,81 @@
+/*------------------------------ MENU
+----------------------------------------------------------------------------------------------------*/
+/* line 10, ../sass/navbar.scss */
+#navbar {
+  z-index: 100;
+  list-style: none;
+  width: 50%;
+  display: inline-block;
+  text-align: right;
+  font-size: 140%;
+}
+/* line 18, ../sass/navbar.scss */
+#navbar li {
+  border-radius: 3px;
+}
+/* line 22, ../sass/navbar.scss */
+#navbar a {
+  color: #395147;
+  text-decoration: none;
+  display: block;
+  padding: 10px 5px 10px 5px;
+  border-radius: 3px;
+  -webkit-text-shadow: -1px -1px 1px #58786b, 1px 1px 1px #dbdada;
+  -moz-text-shadow: -1px -1px 1px #58786b, 1px 1px 1px #dbdada;
+  -ms-text-shadow: -1px -1px 1px #58786b, 1px 1px 1px #dbdada;
+  -o-text-shadow: -1px -1px 1px #58786b, 1px 1px 1px #dbdada;
+  text-shadow: -1px -1px 1px #58786b, 1px 1px 1px #dbdada;
+}
+/* line 31, ../sass/navbar.scss */
+#navbar .mainitem a:hover, #navbar .selected, #navbar .selected-parent {
+  background: #607a6f;
+}
+/* line 35, ../sass/navbar.scss */
+#navbar .mainitem a:hover, #navbar .selected a {
+  color: #b7d4c8;
+  -webkit-text-shadow: -1px -1px 1px #283e35, 1px 1px 1px #9f9a9a;
+  -moz-text-shadow: -1px -1px 1px #283e35, 1px 1px 1px #9f9a9a;
+  -ms-text-shadow: -1px -1px 1px #283e35, 1px 1px 1px #9f9a9a;
+  -o-text-shadow: -1px -1px 1px #283e35, 1px 1px 1px #9f9a9a;
+  text-shadow: -1px -1px 1px #283e35, 1px 1px 1px #9f9a9a;
+}
+/* line 40, ../sass/navbar.scss */
+#navbar .mainitem:hover {
+  background: #607a6f;
+}
+/* line 44, ../sass/navbar.scss */
+#navbar .mainitem {
+  margin: 0 -3px 0 -2px;
+  position: relative;
+  display: inline-block;
+}
+/* line 50, ../sass/navbar.scss */
+#navbar .mainitem ul {
+  position: absolute;
+  z-index: 101;
+  padding: 0 0 0 0;
+  visibility: hidden;
+  opacity: 0;
+  max-height: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #839f93;
+  -webkit-box-shadow: 0 3px 5px 1px #53665e ;
+  -moz-box-shadow: 0 3px 5px 1px #53665e ;
+  -ms-box-shadow: 0 3px 5px 1px #53665e ;
+  -o-box-shadow: 0 3px 5px 1px #53665e ;
+  box-shadow: 0 3px 5px 1px #53665e ;
+  -webkit-touch-callout-transition: opacity 0.4s ease-in-out, max-height, 0.4s, ease-in-out;
+  -webkit-transition: opacity 0.4s ease-in-out, max-height, 0.4s, ease-in-out;
+  -khtml-transition: opacity 0.4s ease-in-out, max-height, 0.4s, ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out, max-height, 0.4s, ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out, max-height, 0.4s, ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out, max-height, 0.4s, ease-in-out;
+  transition: opacity 0.4s ease-in-out, max-height, 0.4s, ease-in-out;
+}
+/* line 64, ../sass/navbar.scss */
+#navbar .mainitem:hover ul {
+  visibility: visible;
+  opacity: 1;
+  max-height: 150px;
+}

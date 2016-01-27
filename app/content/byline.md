@@ -1,0 +1,2 @@
+  Jag läser dessa kurser då jag har ett starkt intresse för programmering. Jag är en person som aldrig tidigare kunnat sitta still, först när jag började programmera så fann jag ett lugn. Jag kan sitta i timmar och koda. Utöver programmeringsintresset så tränar jag en hel del.
+  [FIGURE src="img/me/moi.jpg?w=50" class="right_float_with_margin"]

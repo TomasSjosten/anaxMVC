@@ -1,0 +1,69 @@
+
+@import "base";
+
+$lightGrey: rgb(252,252,252);
+$toplinkColor: rgb(11, 75, 113);
+$topLinkColorHover: rgb(0, 101, 136);
+
+/*------------------------------ MENU
+----------------------------------------------------------------------------------------------------*/
+#navbar {
+    z-index: 100;
+    list-style: none;
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+    font-size: 140%;
+
+    li {
+        border-radius: 3px;
+    }
+
+    a {
+        color: rgb(57, 81, 71);
+        text-decoration: none;
+        display: block;
+        padding: 10px 5px 10px 5px;
+        border-radius: 3px;
+        @include text-shadow(-1px, -1px, 1px, rgb(88, 120, 107), 1px, 1px, 1px, rgb(219,218,218));
+    }
+
+    .mainitem a:hover, .selected, .selected-parent {
+        background: rgb(96, 122, 111);
+    }
+
+    .mainitem a:hover, .selected a {
+        color: rgb(183, 212, 200);
+        @include text-shadow(-1px, -1px, 1px, rgb(40, 62, 53), 1px, 1px, 1px, rgb(159, 154, 154));
+    }
+
+    .mainitem:hover {
+        background: rgb(96, 122, 111);
+    }
+
+    .mainitem {
+        margin: 0 -3px 0 -2px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .mainitem ul {
+        position: absolute;
+        z-index: 101;
+        padding: 0 0 0 0;
+        visibility: hidden;
+        opacity: 0;
+        max-height: 0;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background: rgb(131, 159, 147);
+        @include box-shadow(0, 3px, 5px, 1px, rgb(83,102,94));
+        @include transition(opacity, 0.4s, ease-in-out, max-height, 0.4s, ease-in-out);
+    }
+
+    .mainitem:hover ul {
+        visibility: visible;
+        opacity: 1;
+        max-height: 150px;
+    }
+}

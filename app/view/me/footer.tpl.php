@@ -1,0 +1,1 @@
+<span class='sitefooter'>A site by Tomas Sjösten (tomas.sjosten@gmail.com) | <a href='https://github.com/TomasSjosten'>Jag på GitHub</a> | <a href='http://validator.w3.org/unicorn/check?ucn_uri=referer&amp;ucn_task=conformance'>Unicorn</a></span>

@@ -1,0 +1,292 @@
+@import 'compass';
+@import "compass/reset";
+@import "base";
+
+$lightGrey: rgb(252,252,252);
+$toplinkColor: rgb(11, 75, 113);
+$topLinkColorHover: rgb(0, 101, 136);
+
+
+/* ------------------------------- FONTS
+--------------------------------------------------------------------------------------------------- */
+/* font-family: 'Roboto Slab', serif; */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+
+// For every text except headers
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:800,400,400italic);
+
+
+
+/* ------------------------------- GENERAL
+--------------------------------------------------------------------------------------------------- */
+* {
+    margin:0;
+    padding:0;
+}
+
+html, body, #content {
+    position: relative;
+}
+
+body {
+    background-color: $lightGrey;
+    font-family: 'Alegreya Sans', sans-serif;
+
+    strong {
+        font-weight: 800;
+    }
+
+    .hidden {
+        display: none;
+    }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    font-size: 250%;
+    color: rgb(131, 159, 147);
+    letter-spacing: 1px;
+    border-bottom: solid 1px rgb(187, 203, 196);
+}
+
+
+/*------------------------------ HEADER
+----------------------------------------------------------------------------------------------------*/
+header {
+    min-height: 165px;
+    height: 40vh;
+    max-height: 200px;
+    position: relative;
+    padding: 40px 0 20px 0;
+    background: rgb(131, 159, 147);
+
+    .header {
+        max-width: 960px;
+        margin: 0 auto 0 auto;
+    }
+
+    .header-left {
+        width: 49%;
+        display: inline-block;
+    }
+
+    img {
+        vertical-align: top;
+        margin: 0 21px 0 0;
+    }
+    .header-text {
+        vertical-align: inherit;
+    }
+    img, .header-text {
+        display: inline-block;
+    }
+    .sitetitle {
+        font-size: 500%;
+        display: block;
+    }
+    .siteslogan {
+        font-size: 120%;
+        display: block;
+    }
+}
+
+
+
+
+/*------------------------------ MAIN
+----------------------------------------------------------------------------------------------------*/
+main {
+    position: relative;
+    min-height: 100vh;
+    background: rgb(237, 236, 245);
+
+    .center {
+        max-width: 960px;
+        margin: 0 auto 0 auto;
+        padding: 150px 20px 50px 20px;
+    }
+}
+
+.byline {
+    margin: 140px 0 80px 0;
+    border-top: solid 1px rgb(200,200,200);
+    padding: 10px 0 0 0;
+
+    img {
+        width: 81px;
+    }
+
+    figure{
+        width: 9%;
+    }
+    p {
+        width: 90%;
+        color: rgb(140,140,140);
+    }
+
+    figure, p {
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+
+/*------------------------------ LINKS
+----------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------ FOOTER
+----------------------------------------------------------------------------------------------------*/
+footer {
+    width: 100%;
+    padding: 0 0 32px 0;
+    display: block;
+
+
+
+
+    background: rgb(65, 94, 81);
+    box-shadow: 0 0 4px 2px rgb(31, 50, 42);
+    min-height: 180px;
+    max-height: 200px;
+
+    .sitefooter {
+        max-width: 960px;
+        margin: 0 auto 0 auto;
+        display: block;
+        padding: 20px 0 20px 0;
+    }
+}
+
+
+
+
+
+/*------------------------------ INPUT FIELDS
+----------------------------------------------------------------------------------------------------*/
+
+input[type="submit"], input[type="reset"], button {
+    cursor: pointer;
+    outline: 0;
+    height: 30px;
+    font-size: 110%;
+    padding: 0 10px 0 10px;
+    border-radius: 3px;
+    margin: 0 0 0 auto;
+    display: block;
+}
+
+
+.green_button {
+    background: rgb(117, 203, 112);
+    border: solid 1px rgb(57, 118, 54);
+    color: rgb(37, 98, 34);
+    text-shadow: 1px 1px 0 rgb(166, 231, 163);
+}
+.green_button:hover {
+    cursor: pointer;
+    background: rgb(88, 178, 83);
+    border: solid 1px rgb(50, 104, 47);
+}
+.blue_button {
+    background: rgb(156, 161, 238);
+    border-radius: 5px;
+    border: solid 1px rgb(45, 47, 122);
+    color: rgb(37, 34, 98);
+    text-shadow: 1px 1px 0 rgb(163, 168, 231);
+}
+.blue_button:hover {
+    cursor: pointer;
+    background: rgb(106, 114, 236);
+    border: solid 1px rgb(31, 33, 112);
+}
+.red_button {
+    background: rgb(238, 119, 119);
+    border: solid 1px rgb(236, 35, 35);
+    color: rgb(145, 30, 30);
+    text-shadow: 1px 1px 0 rgb(240, 164, 164);
+}
+.red_button:hover {
+    cursor: pointer;
+    background: rgb(229, 88, 88);
+    border: solid 1px rgb(229, 17, 17);
+}
+
+
+
+/*------------------------------ FANCYBOX
+----------------------------------------------------------------------------------------------------*/
+#box {
+    z-index: 100;
+    background: rgb(252, 252, 252);
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+    min-width: 200px;
+    min-height: 100px;
+    max-width: 90%;
+    max-height: 90%;
+    padding: 20px;
+    border-radius: 5px;
+    border: solid 1px;
+    @include box-shadow(2px, 2px, 22px, 10px, rgb(150,150,150));
+
+    #box_overflow {
+        overflow: scroll;
+        max-height: 75vh;
+        min-height: 100px;
+        padding: 5px 5px 5px 5px;
+    }
+
+    #close_icon {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        cursor: pointer;
+        border-radius: 50px;
+        background-color: $lightGrey;
+
+        &:hover {
+            background-color: rgb(255, 159, 159);
+        }
+    }
+}
+
+
+/*------------------------------ MESSAGE BUBBLE
+----------------------------------------------------------------------------------------------------*/
+.msg {
+    position: fixed;
+    top: 60px;
+    right: 40px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+}
+
+.okmsg {
+    background: rgb(179, 242, 175);
+    @include box-shadow(0,0,15px,1px, rgb(56,122,61));
+    border: solid 1px rgb(40, 144, 21);
+    color: rgb(14, 109, 1);
+}
+
+.errormsg {
+    background: rgb(246, 163, 163);
+    border: solid 1px rgb(144, 21, 21);
+    color: rgb(153, 6, 6);
+    @include box-shadow(0,0,15px,1px, rgb(120,70,70));
+}
